@@ -8,7 +8,7 @@ package org.java.oop.snacks;
 public class ContoBancario {
 private int numContoBancario;
 private double saldo;
-ContoBancario( int numContoBancario){;
+public ContoBancario( int numContoBancario){;
 	this.saldo = 0.00;
 }
 public void depositaDenaro (double importo) {
@@ -37,7 +37,8 @@ public void prelevaDenaro(double importo) {
 	}		
 }
 public double getSaldo (){
-	return saldo;
+	return saldo
+			;
 }
 public int getNumContoBancario() {
 	return numContoBancario;

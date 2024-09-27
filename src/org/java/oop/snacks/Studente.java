@@ -11,7 +11,7 @@ Studente (String name, String surname, int age){
 	this.age = age;
 }
 public void getInfo() {
-	String info = name +"-" + surname + "-" + "-" +age;
+	String info = name +"-" + surname  + "-" +age;
 	System.out.println("Le info del sutende sono: "+info);
 }
 }

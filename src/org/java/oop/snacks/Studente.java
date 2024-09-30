@@ -10,8 +10,10 @@ public Studente (String name, String surname, int age){
 	this.surname = surname;
 	this.age = age;
 }
+
 public String toString() {
 	//String info = name +"-" + surname  + "-" +age;
-	return name + "" + surname;
+	return name +" " + surname +  " "+ age;
+	
 }
 }

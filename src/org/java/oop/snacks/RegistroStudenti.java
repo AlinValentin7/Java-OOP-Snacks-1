@@ -11,23 +11,27 @@ private Studente []registro;
 private int nStudents;
 
 public RegistroStudenti(){
-	registro = new Studente [50];
+	registro = new Studente [4];
 	nStudents = 0;
+}
+public RegistroStudenti(int uno) {
+	
 }
 public void addStudent (Studente student) {
 	if(nStudents < registro.length) {
 		registro[nStudents] = student;
-		nStudents = nStudents + 1;
+		//nStudents = nStudents + 1;
+		nStudents++;
 	}else {
 		System.out.println("Il registro è pieno");
 	}
 } 
 public void listaStudenti() {
-	if(nStudents < 0) {
+	if(nStudents == 0) {
 		System.out.println("Il regisrto è vuoto");
 	}else {
 		System.out.println("la lista degli studenti è: ");
-		for(int i = 0; i < registro.length; i++) {
+		for(int i = 0; i < nStudents; i++) {
 			System.out.println(registro[i]);
 			
 		}
